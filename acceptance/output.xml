@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 2.9 (Jython 2.7.0 on java1.7.0_65)" generated="20150831 15:33:47.632">
+<suite source="/Users/trentford/Documents/jsu-se-hello-world/acceptance/HelloWorldTests.txt" id="s1" name="HelloWorldTests">
+<test id="s1-t1" name="Say Hello">
+<kw library="HelloWorldKeywords" name="Greet Everyone">
+<status status="PASS" starttime="20150831 15:33:48.563" endtime="20150831 15:33:48.569"></status>
+</kw>
+<status status="PASS" starttime="20150831 15:33:48.552" endtime="20150831 15:33:48.572" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Say Hello In Pig Latin">
+<kw library="HelloWorldKeywords" name="Reverse Greet Everyone">
+<status status="PASS" starttime="20150831 15:33:48.587" endtime="20150831 15:33:48.593"></status>
+</kw>
+<status status="PASS" starttime="20150831 15:33:48.577" endtime="20150831 15:33:48.597" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Make Sure You're Saying Hello">
+<kw library="HelloWorldKeywords" name="Greet Everyone">
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20150831 15:33:48.623" level="INFO">${result} = hello world</msg>
+<status status="PASS" starttime="20150831 15:33:48.615" endtime="20150831 15:33:48.625"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>hello world</arg>
+</arguments>
+<status status="PASS" starttime="20150831 15:33:48.629" endtime="20150831 15:33:48.640"></status>
+</kw>
+<status status="PASS" starttime="20150831 15:33:48.604" endtime="20150831 15:33:48.642" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Make A Test That Fails">
+<kw library="HelloWorldKeywords" name="Reverse Greet Everyone">
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20150831 15:33:48.659" level="INFO">${result} = dlrow olleh</msg>
+<status status="PASS" starttime="20150831 15:33:48.654" endtime="20150831 15:33:48.660"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>hello world</arg>
+</arguments>
+<msg timestamp="20150831 15:33:48.673" level="FAIL">dlrow olleh != hello world</msg>
+<status status="FAIL" starttime="20150831 15:33:48.663" endtime="20150831 15:33:48.676"></status>
+</kw>
+<status status="FAIL" starttime="20150831 15:33:48.645" endtime="20150831 15:33:48.680" critical="yes">dlrow olleh != hello world</status>
+</test>
+<status status="FAIL" starttime="20150831 15:33:47.660" endtime="20150831 15:33:48.687"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1">Critical Tests</stat>
+<stat pass="3" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" id="s1" fail="1" name="HelloWorldTests">HelloWorldTests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
