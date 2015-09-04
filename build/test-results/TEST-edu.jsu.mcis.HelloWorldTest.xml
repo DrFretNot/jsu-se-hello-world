@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.jsu.mcis.HelloWorldTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-08-31T20:18:47" hostname="Trents-MacBook-Air.local" time="0.008">
+<testsuite name="edu.jsu.mcis.HelloWorldTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-09-02T19:23:16" hostname="Trents-MacBook-Air.local" time="0.015">
   <properties/>
-  <testcase name="testReverseIt" classname="edu.jsu.mcis.HelloWorldTest" time="0.007"/>
+  <testcase name="testReverseIt" classname="edu.jsu.mcis.HelloWorldTest" time="0.015"/>
   <testcase name="testShowIt" classname="edu.jsu.mcis.HelloWorldTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
